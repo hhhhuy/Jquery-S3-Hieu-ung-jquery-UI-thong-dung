@@ -1,0 +1,148 @@
+.container {
+    margin-top: 20px;
+}
+.content {
+    margin: 20px 0 20px 0;
+    border-radius: 5px;
+    height: auto;
+    /*border: 1px solid #c8cbcf;*/
+}
+.content .left {
+    background-color: #cce5ff;
+}
+.left {
+    /*position: fixed;*/
+}
+
+.right {
+    /*margin-left: 100px;*/
+}
+
+.interaction {
+    margin: 10px;
+    padding: 12px 20px;
+}
+
+.interaction li a {
+    color: #4d4d4d;
+    text-decoration: none;
+    display: block;
+}
+
+.widgets {
+    margin: 10px;
+    padding: 12px 20px;
+}
+
+.widgets li a {
+    color: #4d4d4d;
+    text-decoration: none;
+    display: block;
+}
+
+.effects {
+    margin: 10px;
+    padding: 12px 20px;
+}
+
+.effects li a {
+    color: #4d4d4d;
+    text-decoration: none;
+    display: block;
+}
+
+
+ul > li > a:hover {
+    color: white;
+}
+
+.row {
+    margin: 10px;
+}
+
+#draggable p {
+    width: 150px;
+    height: 150px;
+    padding: 0.5em;
+}
+
+#draggable1 {
+    width: 100px;
+    height: 100px;
+
+}
+
+#droppable {
+    width: 200px;
+    height: 200px;
+}
+
+#resizable {
+    width: 150px;
+    height: 150px;
+    padding: 0.5em;
+}
+
+#resizable h3 {
+    text-align: center;
+    margin: 0;
+}
+
+#feedback {
+    font-size: 1.4em;
+}
+
+#selectable li {
+    font-size: 5px;
+}
+
+#selectable .ui-selecting {
+    background: #FECA40;
+}
+
+#selectable .ui-selected {
+    background: #F39814;
+    color: white;
+}
+
+#selectable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+}
+
+#selectable li {
+    text-align: center;
+    margin: 3px;
+    padding: 0.4em;
+    font-size: 1em;
+    height: 30px;
+}
+
+#sortable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+}
+
+#sortable li {
+    text-align: center;
+    margin: 0 3px 3px 3px;
+    padding: 0.4em;
+    padding-left: 1.5em;
+    font-size: 1em;
+    height: 30px;
+}
+
+#sortable li span {
+    position: absolute;
+    margin-left: -1.3em;
+}
+
+.footer {
+    clear: left;
+    border-radius: 5px;
+    height: 100px;
+}

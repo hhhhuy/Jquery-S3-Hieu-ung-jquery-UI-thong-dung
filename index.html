@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQUERY UI</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="css/bootstrap.min.css"></script>
+    <link rel="stylesheet" href="css/mycss.css">
+    <script src="jquery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/myjs.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <header class="">
+
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-12">
+        <a class="navbar-brand" href="#"><i class="fas fa-home"></i> Trang chủ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fas fa-clipboard-list"></i> Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-phone-square"></i> Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-envelope"></i> Góp ý</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="far fa-question-circle"></i> Hỏi đáp</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i>
+                        Tài khoản
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Đăng nhập</a>
+                        <a class="dropdown-item" href="#">Đăng ký</a>
+                        <a class="dropdown-item" href="#">Quên mật khẩu</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Đăng xuất</a>
+                        <a class="dropdown-item" href="#">Đổi mật khẩu</a>
+                        <a class="dropdown-item" href="#">Cập nhật hồ sơ</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Đơn hàng</a>
+                        <a class="dropdown-item" href="#">Hàng đã mua</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">English</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Việt Nam</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content col-12">
+        <div class="left col-md-4 float-left float-md-left">
+            <div class="interaction">
+                <h3>Interaction</h3>
+                <ul>
+                    <li><a href="#draggable">Draggable</a></li>
+                    <li><a href="#drop">Droppable</a></li>
+                    <li><a href="#resizable">Resizable</a></li>
+                    <li><a href="#selectable">Selectable</a></li>
+                    <li><a href="#sortable">Sortable</a></li>
+                </ul>
+            </div>
+            <div class="widgets">
+                <h3>Widgets</h3>
+                <ul>
+                    <li><a href="#accordion">Accordion</a></li>
+                    <li><a href="#autocomplete">Autocomplete</a></li>
+                    <li><a href="#datepicker">Datepicker</a></li>
+                    <li><a href="list/dialog.html" target="_blank">Dialog</a></li>
+                    <li><a href="list/slider.html" target="_blank">Slider</a></li>
+                    <li><a href="list/progressbar.html" target="_blank">Progressbar</a></li>
+                    <li><a href="list/spinner.html" target="_blank">Spinner</a></li>
+                    <li><a href="list/tab.html" target="_blank">Tabs</a></li>
+                </ul>
+            </div>
+            <div class="effects">
+                <h3>Effects</h3>
+                <ul>
+                    <li><a href="list/addClass.html" target="_blank">Add class</a></li>
+                    <li><a href="list/removeClass.html" target="_blank">Remove class</a></li>
+                    <li><a href="list/effect.html" target="_blank">Effect</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right col-md-8 float-left float-md-left">
+            <div class="row">
+                <p class="col-3">Draggable</p>
+                <div class="col-6">
+                    <div id="draggable" class="ui-widget-content">
+                        <p>Dragable</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <p class="col-3" id="drop">Dropable</p>
+                <div class="col-6">
+                    <div class="dropable ">
+                        <div id="draggable1" class="ui-widget-content">
+                            <p>Dropable</p>
+                        </div>
+                        <div id="droppable" class="ui-widget-header">
+                            <p>Drop here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <p class="col-3">Resizable</p>
+                <div class="col-6">
+                    <div id="resizable" class="ui-widget-content">
+                        <h3 class="ui-widget-header">Resizable</h3>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <p class="col-3">Selectable</p>
+                <ol id="selectable" class="col-9">
+                    <li class="ui-widget-content">Item 1</li>
+                    <li class="ui-widget-content">Item 2</li>
+                    <li class="ui-widget-content">Item 3</li>
+                    <li class="ui-widget-content">Item 4</li>
+                    <li class="ui-widget-content">Item 5</li>
+                    <li class="ui-widget-content">Item 6</li>
+                    <li class="ui-widget-content">Item 7</li>
+                </ol>
+            </div>
+            <hr>
+            <div class="row">
+                <p class="col-3">Sortable</p>
+                <ul id="sortable" class="col-9">
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="row">
+                <p class="col-3">Accordion</p>
+                <div id="accordion" class="col-9">
+                    <h3>Section 1</h3>
+                    <div>
+                        <p>
+                            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                        </p>
+                    </div>
+                    <h3>Section 2</h3>
+                    <div>
+                        <p>
+                            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                            suscipit faucibus urna.
+                        </p>
+                    </div>
+                    <h3>Section 3</h3>
+                    <div>
+                        <p>
+                            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                        </p>
+                        <ul>
+                            <li>List item one</li>
+                            <li>List item two</li>
+                            <li>List item three</li>
+                        </ul>
+                    </div>
+                    <h3>Section 4</h3>
+                    <div>
+                        <p>
+                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                            mauris vel est.
+                        </p>
+                        <p>
+                            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                            inceptos himenaeos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <p id="autocomplete" class="col-3">Autocomplete</p>
+                <div class="ui-widget col-9">
+                    <label for="tags">Tags: </label>
+                    <input id="tags">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <p class="col-3">Datepicker</p>
+                <p class="col-9">Date: <input type="text" id="datepicker"></p>
+            </div>
+            <hr>
+
+        </div>
+    </div>
+    <footer class="footer col-md-12 bg-dark">
+
+    </footer>
+</div>
+</body>
+</html>
